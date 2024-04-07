@@ -1,3 +1,4 @@
 [submodule "vendor/bitbucket.org/victorykit/sphinx-victorykit-theme-assets"]
 	path = vendor/bitbucket.org/victorykit/sphinx-victorykit-theme-assets
 	url = git@bitbucket.org:victorykit/sphinx-victorykit-theme-assets.git
+    shallow = true
