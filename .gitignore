@@ -1,1 +1,8 @@
+
+/dist/
 /build/
+/src/**/*.egg-info
+/src/**/*.pyc
+/src/**/__pycache/
+/node_modules/
+/devel/
