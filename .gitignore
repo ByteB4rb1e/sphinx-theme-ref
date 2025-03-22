@@ -4,3 +4,4 @@
 /src/**/*.egg-info
 /src/**/*.pyc
 /src/**/__pycache/
+/.venv/
