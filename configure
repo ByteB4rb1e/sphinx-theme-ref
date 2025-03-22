@@ -1816,12 +1816,12 @@ python3 -m venv .venv
 
 { printf "%s\n" "$as_me:${as_lineno-$LINENO}: installing dependencies..." >&5
 printf "%s\n" "$as_me: installing dependencies..." >&6;}
-.venv/bin/pip install requirements.txt
+.venv/bin/pip install --requirement requirements.txt
 
 # install dev dependencies seperately, for clarity
 { printf "%s\n" "$as_me:${as_lineno-$LINENO}: installing dev dependencies..." >&5
 printf "%s\n" "$as_me: installing dev dependencies..." >&6;}
-.venv/bin/pip install requirements-dev.txt
+.venv/bin/pip install --requirement requirements-dev.txt
 
 cat >confcache <<\_ACEOF
 # This file is a shell script that caches the results of configure
