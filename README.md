@@ -90,7 +90,7 @@ sh ./configure
 2. **Install dependencies (Microsoft PowerShell)**
 
 ```powershell
-git submodule update --init --remote && npm install
+git submodule update --init --remote --recursive && npm install
 ```
 
 3. **Preview and experiment**
