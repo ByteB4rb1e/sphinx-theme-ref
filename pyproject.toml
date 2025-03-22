@@ -6,6 +6,44 @@ requires = [
 ]
 build-backend = "setuptools.build_meta"
 
+[project]
+name = "sphinx-theme-ref"
+description = "Tiara's Sphinx documentation theme reference"
+authors = [
+    { name = "Tiara Rodney", email = "tiara.rodney@administratrix.de" }
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+classifiers = [
+  "Development Status :: 1 - Planning",
+  "Environment :: Web Environment",
+  "Framework :: Sphinx",
+  "Framework :: Sphinx :: Theme",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Documentation",
+  "Topic :: Software Development :: Documentation",
+]
+dependencies = [
+  "sphinx >= 6.0,<9.0",
+]
+dynamic = ["version"]
+requires-python = ">=3.8"
+
+[project.urls]
+Bitbucket = "https://bitbucket.org/tiaracodes/sphinx-theme-ref"
+GitHub = "https://github.com/oxbqkwwxfrqccwtg/sphinx-theme-ref"
+
+[tool.mypy]
+strict = true
+
 [tool.autopep8]
 max_line_length = 80
 aggressive = 3
@@ -13,3 +51,4 @@ recursive = true
 in-place = true
 
 [tool.setuptools_scm]
+
