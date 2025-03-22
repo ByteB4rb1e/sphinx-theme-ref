@@ -5,3 +5,7 @@
 /src/**/*.pyc
 /src/**/__pycache/
 /.venv/
+/autom4te.cache/
+/config.log
+/config.status
+/configure~
