@@ -1,7 +1,7 @@
 [theme]
 inherit = "basic"
 stylesheets = [
-    "style/main.css",
+    "assets/style/theme.css",
 ]
 sidebars = [
     "localtoc.html",

@@ -1,7 +1,5 @@
 """
-Sphinx victory-k.it theme.
-
-From https://bitbucket.org/victorykit/sphinx-victorykit-theme.
+Tiara's Sphinx theme reference implementation.
 """
 
 from os import path
@@ -11,12 +9,11 @@ from sphinx import version_info as sphinx_version
 from sphinx.locale import _
 from sphinx.util.logging import getLogger
 
-
-__version__ = '2.0.1alpha1'
+# TODO: Figure out how to integrate with setuptools_scm
+__version__ = '0.0.1'
 __version_full__ = __version__
 
 logger = getLogger(__name__)
-
 
 def get_html_theme_path():
     """Return list of HTML theme paths."""
@@ -44,7 +41,7 @@ def setup(app):
 
     app.require_sphinx('5.0')
     if app.config.html4_writer:
-        logger.error("'html4_writer' is not supported with victorykit_theme.")
+        logger.error("'html4_writer' is not supported with sphinx_theme_ref.")
 
     # Since Sphinx 6, jquery isn't bundled anymore and we need to ensure that
     # the sphinxcontrib-jquery extension is enabled.
@@ -60,7 +57,7 @@ def setup(app):
 #        jquery_add_js_files(app, app.config)
 
     # Register the theme that can be referenced without adding a theme path
-    app.add_html_theme('victorykit', path.abspath(path.dirname(__file__)))
+    app.add_html_theme('tiaras-theme-ref', path.abspath(path.dirname(__file__)))
 
     # Add Sphinx message catalog for newer versions of Sphinx
     # See http://www.sphinx-doc.org/en/master/extdev/appapi.html#sphinx.application.Sphinx.add_message_catalog
@@ -68,7 +65,7 @@ def setup(app):
     app.add_message_catalog('sphinx', rtd_locale_path)
     app.connect('config-inited', config_initiated)
 
-    app.add_js_file('main.js')
+    app.add_js_file('assets/script/theme.js')
 
     # sphinx emits the permalink icon for headers, so choose one more in keeping with our theme
     app.config.html_permalinks_icon = "\uf0c1"
