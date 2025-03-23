@@ -1,4 +1,7 @@
-.PHONY: requirements.txt requirements-dev.txt configure
+.PHONY: requirements.txt requirements-dev.txt configure Pipfile.lock
+
+Pipfile.lock:
+	.venv/bin/pipenv lock
 
 requirements.txt:
 	.venv/bin/pipenv requirements > requirements.txt
