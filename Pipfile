@@ -4,7 +4,6 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-sphinx = "*"
 sphinx-theme-ref = {file = ".", editable = true}
 
 [dev-packages]
