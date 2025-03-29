@@ -1,5 +1,5 @@
 [theme]
-inherit = "basic"
+inherit = "none"
 stylesheets = [
     "assets/style/theme.css",
 ]
@@ -9,16 +9,6 @@ sidebars = [
     "sourcelink.html",
     "searchbox.html",
 ]
-# Style names from https://pygments.org/styles/
 pygments_style = { default = "style_name", dark = "dark_style" }
 
 [options]
-nosidebar = false
-sidebarwidth = 230
-body_min_width = 360
-body_max_width = 800
-navigation_with_keys = False
-enable_search_shortcuts = True
-globaltoc_collapse = true
-globaltoc_includehidden = false
-globaltoc_maxdepth =
