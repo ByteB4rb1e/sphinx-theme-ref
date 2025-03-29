@@ -13,6 +13,10 @@ autopep8 = "~=2.3.2"
 setuptools-scm = "~=8.2.0"
 pipenv = "~=2024.4.1"
 pylint = "~=3.3.6"
+build = "*"
 
 [requires]
 python_version = "3.11"
+
+[scripts]
+"build" = "python3 -m build"

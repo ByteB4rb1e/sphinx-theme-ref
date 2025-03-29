@@ -1,4 +1,4 @@
-.PHONY: requirements.txt requirements-dev.txt configure Pipfile.lock src/sphinx_theme_ref/assets
+.PHONY: requirements.txt requirements-dev.txt configure Pipfile.lock src/sphinx_theme_ref/assets build
 
 PKG_BASENAME := sphinx_theme_ref
 
@@ -25,4 +25,7 @@ uat:
 	trap 'kill 0' SIGINT; \
 	make -C vendor/html-theme-ref watch OUTPUT_PATH=$(VENDOR_OUTPUT_PATH) & \
 	wait
+
+build:
+	.venv/bin/pipenv run build
 
