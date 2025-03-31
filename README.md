@@ -2,7 +2,7 @@
 # Tiara's Sphinx Theme Reference Implementation
 
 > **Heads up**: This is a work-in-progress reference implementation to showcase
-  how [Tiara's HTML Theming Reference](https://github.com/oxbqkwwxfrqccwtg/html-theme-ref) 
+  how [Tiara's HTML Theming Reference](https://github.com/ByteB4rb1e/html-theme-ref) 
   can integrate with a from-scratch Sphinx documentation theme. I'll be *working
   backwards*, so expect the project to align with this *README*, not the other
   way around.
@@ -69,7 +69,7 @@ documentation platforms like Sphinx by:
 - **Promoting Standards**: Adhering to W3C, accessibility guidelines, and UNIX
   principles.
 
-For the philosophy behind this, see [Tiara's HTML Theming Reference README](https://github.com/oxbqkwwxfrqccwtg/html-theme-ref).
+For the philosophy behind this, see [Tiara's HTML Theming Reference README](https://github.com/ByteB4rb1e/html-theme-ref).
 
 ---
 
