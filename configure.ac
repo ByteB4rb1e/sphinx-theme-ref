@@ -14,7 +14,10 @@ git submodule update --init --remote --recursive
 # by storing the build package archive under vendor/ instead and untar the
 # archive into src/<whatever>.
 AC_MSG_NOTICE([initializing vendors...])
-sh -xc "cd vendor/html-theme-ref && sh ./configure"
+
+# prefix for vendor subcommand output
+sub_prefix="vendor/html-theme-ref: "
+sh -c "cd vendor/html-theme-ref && sh ./configure | sed 's|^|$sub_prefix|'"
 
 AC_MSG_NOTICE([initializing python3 venv...])
 python3 -m venv .venv

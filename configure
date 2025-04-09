@@ -1915,7 +1915,10 @@ git submodule update --init --remote --recursive
 # archive into src/<whatever>.
 { printf "%s\n" "$as_me:${as_lineno-$LINENO}: initializing vendors..." >&5
 printf "%s\n" "$as_me: initializing vendors..." >&6;}
-sh -xc "cd vendor/html-theme-ref && sh ./configure"
+
+# prefix for vendor subcommand output
+sub_prefix="vendor/html-theme-ref: "
+sh -c "cd vendor/html-theme-ref && sh ./configure | sed 's|^|$sub_prefix|'"
 
 { printf "%s\n" "$as_me:${as_lineno-$LINENO}: initializing python3 venv..." >&5
 printf "%s\n" "$as_me: initializing python3 venv..." >&6;}
